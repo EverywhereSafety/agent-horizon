@@ -1,0 +1,10 @@
+- name: long_horizon
+  _target_: long_horizon_rl.adapters.verl_v1.LongHorizonAgentLoop
+  episode_config:
+    max_context_tokens: 32768
+    clear_trigger_tokens: 20480
+    clear_target_tokens: 8192
+    max_new_tokens: 10240
+    max_turns: 1000
+    max_generated_tokens: null
+    episode_timeout_seconds: 7200
