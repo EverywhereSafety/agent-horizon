@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="540" viewBox="0 0 1280 540">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#315c51"/></marker></defs>
+<rect width="1280" height="540" rx="22" fill="#f4f6ef"/>
+<g font-family="sans-serif" fill="#234a3c"><text x="32" y="48" font-size="28" font-weight="bold">Clear the window. Continue the episode.</text><text x="32" y="78" font-size="18">Example: 128K context capacity · clear at 98,304 tokens · retain a target of 65,536</text>
+<rect x="32" y="105" width="545" height="226" rx="14" fill="#fff" stroke="#cad8cb"/><text x="52" y="138" font-size="22" font-weight="bold">Before a context clear</text>
+<rect x="52" y="157" width="505" height="38" rx="7" fill="#dbeae1"/><text x="68" y="183" font-size="18">Initial task + visible memory</text>
+<rect x="52" y="205" width="505" height="44" rx="7" fill="#e9e7e0"/><text x="68" y="234" font-size="18">Older complete tool interactions</text>
+<rect x="52" y="259" width="505" height="44" rx="7" fill="#dfe9f6"/><text x="68" y="288" font-size="18">Recent interaction groups</text>
+<path d="M589 215 H680" stroke="#315c51" stroke-width="2" marker-end="url(#arrow)"/><text x="608" y="196" font-size="16">clear</text>
+<rect x="701" y="105" width="547" height="226" rx="14" fill="#fff" stroke="#cad8cb"/><text x="721" y="138" font-size="22" font-weight="bold">After a context clear</text>
+<rect x="721" y="157" width="507" height="38" rx="7" fill="#dbeae1"/><text x="737" y="183" font-size="18">Initial task + visible memory</text>
+<rect x="721" y="205" width="507" height="44" rx="7" fill="#dfe9f6"/><text x="737" y="234" font-size="18">Retained complete interaction groups</text>
+<rect x="721" y="259" width="507" height="44" rx="7" fill="#fff" stroke="#b5c4b4" stroke-dasharray="5 4"/><text x="737" y="288" font-size="18">Room for new reasoning and tools</text>
+<rect x="32" y="354" width="1216" height="66" rx="12" fill="#dbeae1"/><text x="52" y="381" font-size="19" font-weight="bold">Environment, workspace and memory persist</text><text x="52" y="406" font-size="17">The solver file, current placements and saved deductions remain available.</text>
+<rect x="32" y="438" width="1216" height="76" rx="12" fill="#f6e7d3"/><text x="52" y="466" font-size="19" font-weight="bold">Training segments accumulate</text><text x="52" y="493" font-size="17">Earlier sampled actions + behavior log-probs → new context segment → same episode reward</text></g></svg>

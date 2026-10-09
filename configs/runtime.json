@@ -1,0 +1,11 @@
+{
+  "verl_commit": "1a8a0f5ffd9d3f169ae4432b68526233ba028102",
+  "transferqueue_commit": "7b31c0b6147413bf4b55d0a49e197c85250d814b",
+  "model": "Qwen/Qwen3.5-4B",
+  "model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "torch": "2.11.0+cu130",
+  "transformers": "5.9.0",
+  "vllm": "0.24.0",
+  "ray": "2.55.1",
+  "transferqueue": "0.1.12.dev0"
+}

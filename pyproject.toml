@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "long-horizon-rl"
+version = "0.1.0"
+readme = "README.md"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+description = "Long-horizon agentic RL infrastructure built on veRL"
+
+[project.optional-dependencies]
+dev = ["black==26.3.1"]
+test = ["pytest>=7", "omegaconf>=2.3", "torch>=2.5"]
+
+[tool.setuptools.packages.find]
+include = ["long_horizon_rl*"]
+
+[tool.black]
+required-version = "26.3.1"
+line-length = 88
+target-version = ["py39"]

@@ -1,0 +1,33 @@
+{
+  "profile": "long_horizon",
+  "model": "Qwen/Qwen3.5-4B",
+  "framework": {
+    "repository": "https://github.com/volcengine/verl",
+    "commit": "1a8a0f5ffd9d3f169ae4432b68526233ba028102",
+    "trainer": "separate_async",
+    "verification": "short-context update/resume passed"
+  },
+  "episode": {
+    "max_context_tokens": 131072,
+    "clear_trigger_tokens": 98304,
+    "clear_target_tokens": 65536,
+    "max_new_tokens": 16384,
+    "max_turns": 1000,
+    "total_episode_token_limit": null,
+    "attempt_n": 18,
+    "retain_n": 16,
+    "max_policy_lag": 3
+  },
+  "training": {
+    "full_parameter": true,
+    "status": "short-context distributed update and resume passed; full long-horizon integration pending",
+    "algorithm": "grpo",
+    "prompts_per_step": 64,
+    "learning_rate": 2e-06,
+    "clip_ratio": 0.004,
+    "epochs_per_batch": 1,
+    "kl_penalty": false,
+    "advantage_standardization": false,
+    "prompt_cap_tokens": 8192
+  }
+}

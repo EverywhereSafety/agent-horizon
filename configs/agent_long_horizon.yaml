@@ -1,0 +1,9 @@
+- name: long_horizon
+  _target_: long_horizon_rl.adapters.verl_v1.LongHorizonAgentLoop
+  episode_config:
+    max_context_tokens: 131072
+    clear_trigger_tokens: 98304
+    clear_target_tokens: 65536
+    max_new_tokens: 16384
+    max_turns: 1000
+    max_generated_tokens: null

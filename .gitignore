@@ -1,0 +1,28 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.pem
+.DS_Store
+outputs/
+checkpoints/
+logs/
+vendor/
+.sandbox-env/
+
+*.egg-info/
+
+/wandb/
+
+.venv-megatron/
+
+# Experiment outputs and local review artifacts.
+*.log
+slurm-*.out
+.pytest_cache/
+artifacts/
+
+# Python distribution build products.
+build/
+dist/

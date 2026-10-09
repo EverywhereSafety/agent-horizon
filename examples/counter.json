@@ -1,0 +1,7 @@
+{
+  "prompt_uid": "counter-example",
+  "messages": [{"role": "user", "content": "Reach the target exactly using advance(amount=1 or 2). Store and retrieve your goal using memory tools."}],
+  "environment": {"adapter": "counter", "target": 9},
+  "agent_info": {"max_turn": 10000},
+  "reward": {"adapter": "exact_target", "success": 1.0, "overshoot": 0.0}
+}
